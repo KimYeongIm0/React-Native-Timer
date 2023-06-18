@@ -7,7 +7,10 @@ type Props = {
   setTimerCount: number;
   setisTimerRunning: boolean;
 };
-export const TimerCountDownDisplay: React.FC<Props> = ({ timerDate }) => {
+export const TimerCountDownDisplay: React.FC<Props> = ({
+  timerDate,
+  setTimerCount,
+}) => {
   const [selectedMinutes, setSelectedMinutes] = useState("");
   const [selectedSeconds, setSelectedSeconds] = useState("");
 
